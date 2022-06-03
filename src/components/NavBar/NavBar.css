@@ -1,0 +1,26 @@
+.nav-bg{
+    background-color: rgb(187, 33, 123);
+
+}
+.itemsNav{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.navLink{
+    color: #fff;
+    justify-content: flex-end;
+}
+.navLink:hover{
+    color: #000;
+    justify-content: flex-end;
+    transition: 0.7s;
+}
+.navLink-icon{
+    color: #fff;
+    font-size: 2rem;
+}
+.navLink-icon:hover{
+    color: #000;
+    font-size: 2rem;
+    transition: 0.7s;
+}
