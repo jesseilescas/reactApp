@@ -2,25 +2,27 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css'
+import logo from '../../images/logo.png'
+import { Link, NavLink } from 'react-router-dom';
 function NavBar() {
   return (
     <Navbar expand="lg" className='nav-bg' >
     <Container>
-    <Navbar.Brand href="#home">Chaparrones</Navbar.Brand>
+    <img src={logo} alt="" />
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className='itemsNav' id="basic-navbar-nav">
       
-        <Nav.Link className='navLink' href="#home" >Piñatas</Nav.Link>
-        <Nav.Link className='navLink' href="#link" >Bolsas de Manta</Nav.Link>
-        <Nav.Link className='navLink' href="#link" >Mezcaleros de Peltre</Nav.Link>
-        <Nav.Link className='navLink' href="#link" >Articulos de Fiesta</Nav.Link>
+        <NavLink className='navLink' to='/' >Inicio</NavLink>
+        <NavLink className='navLink' to='/categoria/manta'>Bolsas de Manta</NavLink>
+        <NavLink className='navLink' to='categoria/piñata'>Piñatas</NavLink>
+        
       
     </Navbar.Collapse>
-        <Nav.Link className='navLink-icon' href='#carrito'> 
+        <Link className='navLink-icon' to='/carrito'>
         <CartWidget/>
-        </Nav.Link>
+        </Link>
   </Container>
 </Navbar>
   )

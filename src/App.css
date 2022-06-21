@@ -39,3 +39,26 @@
 .nav{
   background-color: rgb(187, 33, 123);
 }
+.navLink{
+  text-decoration: none;
+  padding: 1rem;
+}
+.spin-container{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+
+  color: rgb(187, 33, 123);
+ 
+}
+.detalle-info{
+  color: rgb(187, 33, 123);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
