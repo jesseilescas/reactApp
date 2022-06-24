@@ -28,11 +28,9 @@ export const getFetchDetail= (id)=>{
     const producto = productos.find( elemento =>{
         return elemento.id === id
     })
-    console.log(producto);
     return new Promise ( (resolve, reject)=>{
         setTimeout(()=>{
             resolve(producto)
         }, 1000)
-        console.log(id);
     })
 }
